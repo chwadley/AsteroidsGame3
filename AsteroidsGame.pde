@@ -24,6 +24,7 @@ ArrayList <rock> rocks = new ArrayList <rock>();
 ArrayList <particle> particles = new ArrayList <particle>();
 input currentInput;
 star[] stars = new star[20];
+int totalFrames=0;
 
 void setup() {
   size(1500,800);
@@ -183,7 +184,7 @@ void goodEnd() {
   noStroke();
   fill(0);
   textAlign(CENTER,CENTER);
-  text("You got all "+count+" asteroids,\n\nincluding "+count2+" asteroids of the smallest size.\n\nYou used "+shots+" bullets",mouseX,mouseY);
+  text("You got all "+count+" asteroids,\n\nincluding "+count2+" asteroids of the smallest size.\n\nYou used "+shots+" bullets\n\nTime: "+frameCount/60,mouseX,mouseY);
   noLoop();
 }
 
