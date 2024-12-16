@@ -23,12 +23,12 @@ class Floater {
   
   public void show() {
     fill(col);
-    push();
     translate(x,y);
     rotate(dir);
     beginShape();
     for (int i = 0; i < corners; i++) vertex(cx[i], cy[i]);
     endShape(CLOSE);
-    pop();
+    rotate(-dir);
+    translate(-x,-y);
   }   
 }
