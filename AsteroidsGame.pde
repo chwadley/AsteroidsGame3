@@ -119,6 +119,15 @@ void frame() {
       i--;
     }
   }
+  fill(currentInput.left?255:128);
+  stroke(255);
+  rect(5,405,40,40);
+  fill(currentInput.down?255:128);
+  rect(45,405,40,40);
+  fill(currentInput.right?255:128);
+  rect(85,405,40,40);
+  fill(currentInput.up?255:128);
+  rect(45,365,40,40);
 }
 
 void smallAsteroidBroken() {
