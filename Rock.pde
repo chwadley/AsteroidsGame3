@@ -20,24 +20,6 @@ class rock extends Floater {
     }
   }
   
-  public rock(int _col, float _x, float _y, float _dir, float _dx, float _dy, float _size, int _corners, int[] _cx, int[] _cy, float _rotVel) {
-    col = _col;
-    x = _x;
-    y = _y;
-    dir = _dir;
-    dx = _dx;
-    dy = _dy;
-    size = _size;
-    corners = _corners;
-    cx = Arrays.copyOf(_cx,_cx.length);
-    cy = Arrays.copyOf(_cy,_cy.length);
-    rotVel = _rotVel;
-  }
-  
-  public rock copy() {
-    return new rock(col, x, y, dir, dx, dy, size, corners, cx, cy, rotVel);
-  }
-  
   public void move() {
     turn(rotVel);
     super.move();
