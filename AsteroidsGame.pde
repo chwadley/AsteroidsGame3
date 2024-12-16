@@ -1,5 +1,3 @@
-import java.util.*;
-//6
 boolean[] keys = new boolean[91];
 
 int mode = 0;
@@ -121,14 +119,6 @@ void frame() {
       i--;
     }
   }
-  /*fill(255);
-  stroke(128);
-  rect(25,75,300,300);
-  fill(0);
-  noStroke();
-  textAlign(CENTER,CENTER);
-  text("Asteroids hit: "+count+"\n"+count2+" small asteroids broken\n"+(bullets?"Shots used: "+shots)+"\n"+(shots-count)+"bullets currently on screen\nShots":"Hits")+" required to break all asteroids: "+totalAsteroids,150,200);
-  text(count2,50,150);*/
 }
 
 void smallAsteroidBroken() {
