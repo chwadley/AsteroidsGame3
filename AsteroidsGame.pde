@@ -14,7 +14,7 @@ int count=0;
 int count2=0;
 int shots=0;
 int frameNum=0;
-int totalAsteroids = 620;
+int totalAsteroids = 1240; //620
 boolean bullets=false;
 boolean breakAsteroids=true;
 boolean controls=true; //new=true
