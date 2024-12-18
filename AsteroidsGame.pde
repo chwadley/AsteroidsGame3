@@ -14,7 +14,7 @@ int count=0;
 int count2=0;
 int shots=0;
 int frameNum=0;
-int totalAsteroids = 1240; //620
+int totalAsteroids = 31*100; //620
 boolean bullets=false;
 boolean breakAsteroids=true;
 boolean controls=true; //new=true
@@ -29,7 +29,7 @@ int totalFrames=0;
 void setup() {
   size(1500,800);
   s = new ship(width/2,height/2);
-  for (int i=0;i<40;i++) { //20
+  for (int i=0;i<100;i++) { //20
     rocks.add(new rock(50,new float[]{_random(0,width),_random(0,height)}));
   }
   for (int i=0;i<stars.length;i++) {
